@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Keystring:</b>
+  <%= @key.keystring %>
+</p>
+
+<p>
+  <b>Claimed by:</b>
+  <%= @key.claimed_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_key_path(@key) %> |
+<%= link_to 'Back', keys_path %>

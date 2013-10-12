@@ -1,0 +1,17 @@
+<h1>Key claim</h1>
+
+<% if @key %>
+  <p>Your key: <%= @key.keystring %></p>
+  <p>You are: <%= @key.claimed_by %></p>
+<%end%>
+
+<% if !@key and !@none_available %>
+  <%= form_tag("/claim") do %>
+    <%= submit_tag "Claim key" %>
+  <%end%>
+<%end%>
+
+<% if !@key and @none_available %>
+  <p>No more keys are available. Please contact staff for more keys, if any more
+  are available.</p>
+<%end%>

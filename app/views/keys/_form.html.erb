@@ -1,0 +1,33 @@
+<%= form_for(@key) do |f| %>
+  <% if @key.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@key.errors.count, "error") %> prohibited this key from being saved:</h2>
+
+      <ul>
+      <% @key.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :keystring %><br />
+    <%= f.text_field :keystring %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= form_tag("/bulk_keys") do |f| %>
+  <h2>Bulk key upload</h2>
+
+  <div class="field">
+    <%= label_tag "Newline separated keys" %>
+    <%= text_area_tag "keys" %>
+  </div>
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+<%end%>
