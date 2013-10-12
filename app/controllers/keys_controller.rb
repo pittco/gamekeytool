@@ -77,7 +77,7 @@ class KeysController < ApplicationController
 
   #POST /bulk_keys
   def bulk_create
-    @keys = params[:keys].split("\n").filter{|k|k.empty?}
+    @keys = params[:keys].split("\n").reject{|k|k.empty?}
     @keys.collect do |key|
       @key = Key.new keystring: key.strip!
       if @key.save

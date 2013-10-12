@@ -15,3 +15,11 @@
   <p>No more keys are available. Please contact staff for more keys, if any more
   are available.</p>
 <%end%>
+
+<% if request.remote_ip == '127.0.0.1' %>
+  <p>You are administrator.</p>
+  <ul>
+    <li><%= link_to "Add keys?", new_key_path %></li>
+    <li><%= link_to "List keys", keys_path %></li>
+  </ul>
+<%end%>
