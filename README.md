@@ -25,22 +25,9 @@ Features
     
 ### Planned features
 
-* Authentication (in order of priority)
-  * HTTP Basic
-  * Steam
-  * GoG
-  * LDAP
-* Claimaint information collection
-  * Email
-  * Name
-  * Steam Name
-  * Comment
-* JAR-based deployment with embedded server or to Apache Tomcat instance
-  * Switch to JRuby from MRI
-* Linux packages
-  * DEB
-  * RPM
-* Homebrew formula
+See [Github Issues: open
+enhancements](https://github.com/pittco/gamekeytool/issues?labels=enhancement&state=open)
+for planned features.
 
 ### Screenshots
 
