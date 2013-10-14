@@ -42,6 +42,14 @@ Features
   * RPM
 * Homebrew formula
 
+### Screenshots
+
+Keys partially obscured for obvious reasons.
+
+![key list](screenshots/admin_key_list.png)
+![key upload](screenshots/admin_key_upload.png)
+![unclaimed, as admin](screenshots/admin_unclaimed.png)
+![claimed, as a user](screenshots/claimed.png)
 
 Use/Workflow
 ------------
