@@ -56,10 +56,10 @@ Use/Workflow
 
 1. Download source from Github or wherever.
 2. Execute some commands:
-       
-       RAILS_ENV=production bundle install
-       RAILS_ENV=production rake db:migrate
-       RAILS_ENV=production rails server
+
+        RAILS_ENV=production bundle install
+        RAILS_ENV=production rake db:migrate
+        RAILS_ENV=production rails server
 
 3. Visit http://localhost:3000/keys to upload key(s).
 4. Direct users to http://localhost:3000 to claim their key.
